@@ -1,0 +1,18 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block content %}
+
+<h3 class="pickle" style="text-align:center;"><a href="/">Registration Form</a></h3>
+<div class="mydata">
+<form method="post">
+{% csrf_token %}
+{{res.as_p}}
+
+<button type="submit" class="btn btn-primary">submit</button>
+</form>
+</div>
+
+
+
+{% endblock %}
